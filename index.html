@@ -1,109 +1,115 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="data:image/jpeg;base64,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" type="image/x-icon">
-    <title>Chess-Game</title>
+    <title>Chess Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 32px;
+        }
+        .white {
+            background-color: #eeeed2;
+        }
+        .black {
+            background-color: #769656;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body>
-    <hr>
-    <h1><b><center>Chess Game♞</center></b></h1>
-    <hr>
-    <div class="main">
-        <div class="lightgreen">&#9820</div>   
-        <div class="green">&#9822</div>
-        <div class="lightgreen">&#9821</div>   
-        <div class="green">&#9818</div>  
-        <div class="lightgreen">&#9823</div>   
-        <div class="green">&#9821</div>  
-        <div class="lightgreen">&#9819</div>   
-        <div class="green">&#9823</div>  
+    <table id="chessboard"></table>
 
-        
-        <div class="green">&#9823</div>
-        <div class="lightgreen">&#9819</div> 
-        <div class="green">&#9820</div>
-        <div class="lightgreen">&#9820</div>
-        <div class="green">&#9821</div>
-        <div class="lightgreen">&#9823</div>
-        <div class="green">&#9819</div>
-        <div class="lightgreen">&#9823</div>  
+    <script>
+        const initialBoard = [
+            ['&#9820;', '&#9822;', '&#9821;', '&#9819;', '&#9818;', '&#9821;', '&#9822;', '&#9820;'],
+            ['&#9823;', '&#9823;', '&#9823;', '&#9823;', '&#9823;', '&#9823;', '&#9823;', '&#9823;'],
+            ['', '', '', '', '', '', '', ''],
+            ['', '', '', '', '', '', '', ''],
+            ['', '', '', '', '', '', '', ''],
+            ['', '', '', '', '', '', '', ''],
+            ['&#9817;', '&#9817;', '&#9817;', '&#9817;', '&#9817;', '&#9817;', '&#9817;', '&#9817;'],
+            ['&#9814;', '&#9816;', '&#9815;', '&#9813;', '&#9812;', '&#9815;', '&#9816;', '&#9814;']
+        ];
 
-        <div class="lightgreen"></div>   
-        <div class="green"></div>
-        <div class="lightgreen"></div>   
-        <div class="green"></div>  
-        <div class="lightgreen"></div>   
-        <div class="green"></div>  
-        <div class="lightgreen"></div>   
-        <div class="green"></div>  
+        let selectedPiece = null;
+        let selectedCell = null;
 
-        
-        <div class="green"></div>
-        <div class="lightgreen"></div> 
-        <div class="green"></div>
-        <div class="lightgreen"></div>
-        <div class="green"></div>
-        <div class="lightgreen"></div>
-        <div class="green"></div>
-        <div class="lightgreen"></div>
+        function createBoard() {
+            const table = document.getElementById('chessboard');
+            table.innerHTML = '';
 
-        <div class="lightgreen"></div>   
-        <div class="green"></div>
-        <div class="lightgreen"></div>   
-        <div class="green"></div>  
-        <div class="lightgreen"></div>   
-        <div class="green"></div>  
-        <div class="lightgreen"></div>   
-        <div class="green"></div>  
+            for (let row = 0; row < 8; row++) {
+                const tr = document.createElement('tr');
+                for (let col = 0; col < 8; col++) {
+                    const td = document.createElement('td');
+                    td.className = (row + col) % 2 === 0 ? 'white' : 'black';
+                    td.innerHTML = initialBoard[row][col];
+                    td.dataset.row = row;
+                    td.dataset.col = col;
+                    td.addEventListener('click', handleCellClick);
+                    tr.appendChild(td);
+                }
+                table.appendChild(tr);
+            }
+        }
 
-        
-        <div class="green"></div>
-        <div class="lightgreen"></div> 
-        <div class="green"></div>
-        <div class="lightgreen"></div>
-        <div class="green"></div>
-        <div class="lightgreen"></div>
-        <div class="green"></div>
-        <div class="lightgreen"></div>
+        function handleCellClick(event) {
+            const row = event.target.dataset.row;
+            const col = event.target.dataset.col;
 
+            if (selectedPiece) {
+                movePiece(row, col);
+            } else {
+                selectPiece(row, col);
+            }
+        }
 
-        <div class="lightgreen bottom">&#9819</div> 
-        <div class="green bottom">&#9823</div>
-        <div class="lightgreen bottom">&#9818</div>   
-        <div class="green bottom">&#9820</div>  
-        <div class="lightgreen bottom">&#9821</div>   
-        <div class="green bottom">&#9819</div>  
-        <div class="lightgreen bottom">&#9822</div>   
-        <div class="green bottom">&#9823</div>  
+        function selectPiece(row, col) {
+            const piece = initialBoard[row][col];
+            if (piece) {
+                selectedPiece = piece;
+                selectedCell = { row, col };
+                highlightCell(row, col, true);
+            }
+        }
 
-        
-        <div class="green bottom" style="outline: black;">&#9823</div>
-        <div class="lightgreen bottom">&#9822</div> 
-        <div class="green bottom">&#9818</div>
-        <div class="lightgreen bottom">&#9821</div>
-        <div class="green bottom">&#9820</div>
-        <div class="lightgreen bottom">&#9823</div>
-        <div class="green bottom">&#9819</div>
-        <div class="lightgreen bottom">&#9822</div>
+        function movePiece(row, col) {
+            if (selectedPiece) {
+                initialBoard[selectedCell.row][selectedCell.col] = '';
+                initialBoard[row][col] = selectedPiece;
+                selectedPiece = null;
+                selectedCell = null;
+                createBoard();
+            }
+        }
 
-    </div>
-    <hr>
-    <center>
-    <h1>
-        <footer>
-        Dua Faima 
-        <br>
-        Roll: 8706 😊
-        <a href="#top" title="Go to top">
-       
-        </a>
-      </h1>
-    </footer>
-</center>
-<hr>
+        function highlightCell(row, col, highlight) {
+            const cells = document.querySelectorAll('td');
+            cells.forEach(cell => {
+                if (cell.dataset.row == row && cell.dataset.col == col) {
+                    cell.classList.toggle('highlight', highlight);
+                }
+            });
+        }
+
+        createBoard();
+    </script>
 </body>
 </html>
